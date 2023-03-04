@@ -130,7 +130,7 @@ export default function Pool() {
     <>
       <PageWrapper>
         <SwapPoolTabs active={'pool'} />
-        <VoteCard>
+        {/* <VoteCard>
           <CardBGImage />
           <CardNoise />
           <CardSection>
@@ -161,7 +161,7 @@ export default function Pool() {
           </CardSection>
           <CardBGImage />
           <CardNoise />
-        </VoteCard>
+        </VoteCard> */}
 
         <AutoColumn gap="lg" justify="center">
           <AutoColumn gap="md" style={{ width: '100%' }}>
@@ -216,7 +216,7 @@ export default function Pool() {
               </EmptyProposals>
             ) : allV2PairsWithLiquidity?.length > 0 || stakingPairs?.length > 0 ? (
               <>
-                <ButtonSecondary>
+                {/* <ButtonSecondary>
                   <RowBetween>
                     <Trans>
                       <ExternalLink href={'https://v2.info.uniswap.org/account/' + account}>
@@ -225,7 +225,7 @@ export default function Pool() {
                       <span> ↗ </span>
                     </Trans>
                   </RowBetween>
-                </ButtonSecondary>
+                </ButtonSecondary> */}
                 {v2PairsWithoutStakedAmount.map((v2Pair) => (
                   <FullPositionCard key={v2Pair.liquidityToken.address} pair={v2Pair} />
                 ))}
@@ -239,7 +239,7 @@ export default function Pool() {
                       />
                     )
                 )}
-                <RowFixed justify="center" style={{ width: '100%' }}>
+                {/* <RowFixed justify="center" style={{ width: '100%' }}>
                   <ButtonOutlined
                     as={Link}
                     to="/migrate/v2"
@@ -255,7 +255,7 @@ export default function Pool() {
                     <ChevronsRight size={16} style={{ marginRight: '8px' }} />
                     <Trans>Migrate Liquidity to V3</Trans>
                   </ButtonOutlined>
-                </RowFixed>
+                </RowFixed> */}
               </>
             ) : (
               <EmptyProposals>
